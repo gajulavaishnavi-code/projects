@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Template Areas Example</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-areas: 
+        "header header"
+        "sidebar content";
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: auto auto;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: #4caf50;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #2196f3;
+      padding: 20px;
+      color: white;
+    }
+
+    .content {
+      grid-area: content;
+      background-color: #f44336;
+      padding: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="header">Header (spans 2 columns)</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="content">Main Content</div>
+  </div>
+
+</body>
+</html>

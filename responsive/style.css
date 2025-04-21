@@ -1,0 +1,57 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+nav{
+    background-color: #333;
+    padding: 10px;
+    width: 100%;
+}
+.menu
+{
+   flex-direction: column;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  
+}
+.humberger
+{
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+#menu-toggle
+{
+    display: none;
+}
+#menu-toggle:checked+.humberger+.menu
+{
+    display: flex;
+}
+@media(min-width:600px)
+{
+    .humberger{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .menu a
+    {
+        border: none;
+        padding: 10px 15px;
+    }
+    
+}
+.con
+{
+    display: flex;
+    justify-content: flex-end;
+   
+}

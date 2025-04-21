@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.top,.dur30,.dur1h
+{
+    background: #3c46ba;
+    background: linear-gradient(90deg,  hsl(264, 100%, 61%) 26%, rgba(199, 86, 219, 1) 56%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px ;
+}
+body{
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   background-color:  hsl(270, 20%, 96%);
+}
+.top img{
+    border-radius: 50%;
+    height: 2.2rem;
+    border: 2px solid white;
+}
+.bio
+{
+    display: flex;
+    flex-direction: column;
+}
+.bld
+{
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.lgt
+{
+    color:  hsl(268, 13%, 71%);
+}
+.chat1,.chat2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+    
+.leftchat
+{
+    max-width: 230px;
+    align-self: flex-start;  
+}
+
+.rightchat
+{
+    max-width:220px;  
+   align-self: flex-end;
+  
+}
+.puppies_img img{
+   max-height: 60px;
+   border-radius: 20%;
+   max-width: 70px;
+}
+.reply
+{ 
+    display: flex;
+    gap: 10px;
+
+   flex-direction: column;  
+}
+.chating{
+    background-color: white;
+   border-radius: 10px;
+   margin:4px ;
+ 
+}
+.chat
+{
+    margin: 3px;
+    color:  hsl(276, 55%, 52%);
+    background-color: rgb(226, 219, 219);
+    border-radius:10px;
+  
+}
+.chat p, .chating {
+    padding: 10px 10px; /* top-bottom: 10px, left-right: 15px */
+    margin: 0;
+  }
+  
+
+.charges
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2px;
+}
+.dur30,.dur1h{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.chatbox p
+{
+    padding: 15px;
+    background-color: white;
+    width: fit-content;
+    border-radius: 15px;
+
+}
+.chatbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.booking h4
+{
+ font-size: 2rem;
+ text-align: center;
+ color: hsl(271, 36%, 24%);
+}
+.booking{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.booking ~h4,p{
+    max-width: 300px;
+    text-align: center;
+    margin: 20px;
+}
+.booking p{
+    color:  hsl(268, 13%, 71%);;
+}
+.but
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.left
+{
+    border: 10px solid white;
+    border-radius: 20px;
+    margin:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    background-color: aliceblue;
+}
+@media (min-width:700px) {
+    main {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+    }
+    .left{
+        width: 40%;
+    }
+    .booking ~h4,p
+    {
+        max-width: 400px;
+        margin:auto   }
+    
+}
